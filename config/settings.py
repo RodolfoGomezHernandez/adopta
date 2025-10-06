@@ -116,10 +116,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+
+#STATIC_URL INDICA EL PREFIJO QUE USARAN LAS RUTAS DE LOS ARCHIVOS ESTATICOS
 STATIC_URL = 'static/'
 
 #Indica la ruta absoluta donde se encuentran los archivos estaticos dentro de la raiz del proyecto
-STATIC_URL=[
+STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static'),
 ]
 

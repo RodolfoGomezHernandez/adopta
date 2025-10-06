@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Portada - Garras y Patas{% endblock %}
+
+{% block content %}
+<section class="main-content">
+    <div class="left-column">
+        <h2>Adopciones</h2>
+        <img   src="{% static 'img/adopta-perro.png' %}" alt="Adopciones">
+        <p>Somos una fundación protectora de animales legalmente constituida en Santiago de Chile, que surge de la necesidad de proteger a animales domésticos en situación de maltrato o abandono, y busca desarrollar una cultura de protección activa de la vida animal.</p>
+    </div>
+    <div class="right-column">
+        <h2>+ Ayúdanos +</h2>
+        <p>Tú también puedes ser la voz de los que no pueden exigir sus derechos.</p>
+        <img src="{% static 'img/ayudanos-perros.jpeg' %}" alt="Ayudanos">
+    </div>
+</section>
+{% endblock %}

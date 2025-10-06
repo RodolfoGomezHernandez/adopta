@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Garras y Patas{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'img/icono.jpg'%}" alt="Logo Patas y Garras">
+        <h1>Adopción de Mascotas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Adopta</a></li>
+            <li><a href="#">Formulario Contacto</a></li>
+            <li><a href="#">Adopta</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Información:</p>
+        <ul>
+            <li>adoptarmascota@gmail.com</li>
+            <li>Teléfono: 9854335516</li>
+            <li>Calle sin nombre 999</li>
+        </ul>
+    </footer>
+</body>
+</html>

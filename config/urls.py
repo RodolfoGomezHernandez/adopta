@@ -19,5 +19,5 @@ from django.urls import path, include # importamos include para poder incluir la
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('adopta.urls')),
+    path('', include('adopta.urls')), # Cualquier URL será gestionada por el archivo urls.py de la app 'adopta'.
 ]

@@ -1,0 +1,107 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    background-color: bisque;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #f4f6f6;
+    color: #e74c3c;
+    font-family: Impact, sans-serif;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #e74c3c;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f6f6;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenedor principal para el contenido */
+main {
+    flex-grow: 1;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    min-width: 300px;
+    padding: 0 20px;
+    text-align: left;
+    color: #e74c3c;
+}
+
+.left-column h2, .right-column h2 {
+    color: #e74c3c;
+}
+
+/*Estilos de las imagenes */
+.left-column img{
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.right-column img{
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 25%;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #34495e;
+    color: white;
+    font-family: Courier, monospace;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
