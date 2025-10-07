@@ -1,4 +1,4 @@
-/* Estilos generales del cuerpo de la página */
+/* --- Estilos Generales y de Fase 1 --- */
 body {
     background-color: bisque;
     font-family: sans-serif;
@@ -9,26 +9,27 @@ body {
     min-height: 100vh;
 }
 
-/* Estilos para el encabezado */
 header {
     background-color: #f4f6f6;
     color: #e74c3c;
     font-family: Impact, sans-serif;
     padding: 20px;
-    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
-    
+    align-items: center;
+    gap: 20px;
 }
 
-header img{
-    width: 100px;
-    height: auto;
+header img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 
-/* Estilos para la barra de navegación */
+header h1 {
+    margin: 0;
+}
+
 nav {
     background-color: #e74c3c;
     padding: 10px 0;
@@ -53,7 +54,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Contenedor principal para el contenido */
 main {
     flex-grow: 1;
 }
@@ -69,29 +69,19 @@ main {
     flex: 1;
     min-width: 300px;
     padding: 0 20px;
-    text-align: left;
-    color: #e74c3c;
+    color: #34495e;
 }
 
 .left-column h2, .right-column h2 {
     color: #e74c3c;
 }
 
-/*Estilos de las imagenes */
-.left-column img{
+.left-column img, .right-column img {
     border-radius: 15px;
     width: 100%;
     max-width: 400px;
 }
 
-.right-column img{
-    border-radius: 15px;
-    width: 100%;
-    max-width: 400px;
-    margin-left: 25%;
-}
-
-/* Estilos para el pie de página */
 footer {
     background-color: #34495e;
     color: white;
@@ -106,57 +96,60 @@ footer ul {
     padding: 0;
 }
 
-/* NUEVO: Estilos para el contenedor del formulario */
-.form-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 30px;
+
+/* --- Estilos para el Formulario de Contacto --- */
+.form-contact {
     background-color: #f4f6f6;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-container h2 {
+.form-contact h2 {
     color: #34495e;
-    margin-bottom: 20px;
+    font-family: Impact, sans-serif;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 
-/* párrafos que genera Django */
-.form-container form p {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 15px;
+.form-contact form p {
+    margin-bottom: 1rem;
 }
 
-.form-container label {
-    margin-bottom: 5px;
+.form-contact label {
+    display: block;
+    margin-bottom: 0.5rem;
     font-weight: bold;
     color: #34495e;
+    text-align: left;
 }
 
-.form-container input {
+.form-contact input[type="text"],
+.form-contact input[type="email"],
+.form-contact input[type="tel"] {
     width: 100%;
-    padding: 10px;
+    padding: 0.75rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; 
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-/* botón de envío */
-.form-container button {
+.form-contact button {
+    width: 100%;
     background-color: #e74c3c;
     color: white;
-    padding: 12px 25px;
+    padding: 0.8rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
-.form-container button:hover {
+.form-contact button:hover {
     background-color: #c0392b;
 }

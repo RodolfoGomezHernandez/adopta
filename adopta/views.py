@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import ContactoForm # Importamos nuestro formulario
+from .forms import ContactoForm # Importamos el formulario
 # Create your views here.
 def home(request):
     #Esta vista renderiza la plantilla home.html cuando se accede a la ruta raíz
