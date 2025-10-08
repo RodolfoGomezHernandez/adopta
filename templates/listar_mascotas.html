@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Adopta una Mascota - Garras y Patas{% endblock %}
+
+{% block content %}
+<div class="lista-container">
+    <h1>Mascotas en Adopción</h1>
+
+    <div class="grid-mascotas">
+        {% for mascota in mascotas %}
+            <div class="card-mascota">
+                <!-- Por ahora no tenemos imagen, pero dejamos el espacio -->
+                <img src="{% static 'img/placeholder.png' %}" alt="Foto de {{ mascota.nombre }}">
+                <h3>{{ mascota.nombre }}</h3>
+                <p><strong>Raza:</strong> {{ mascota.raza }}</p>
+                <p><strong>Peso:</strong> {{ mascota.peso }} kg</p>
+                <p><strong>Estatura:</strong> {{ mascota.estatura }} cm</p>
+                <p><strong>Descripción:</strong> {{ mascota.descripcion }}</p>
+                <p class="ubicacion"><strong>Ubicación:</strong> {{ mascota.comuna }}, {{ mascota.region }}</p>
+            </div>
+        {% empty %}
+            <p class="sin-mascotas">No hay mascotas disponibles para adopción en este momento. ¡Vuelve pronto!</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

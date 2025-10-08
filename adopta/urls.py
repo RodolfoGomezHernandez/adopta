@@ -5,4 +5,5 @@ urlpatterns = [
     # La ruta raíz ('') se asigna a la vista 'home'.
     path('', views.home, name='home'),
     path('contacto/', views.contacto, name='contacto'),
+    path('adopta/', views.lista_mascotas, name='lista_mascotas'),
 ]

@@ -158,3 +158,62 @@ footer ul {
 .form-contact button:hover {
     background-color: #c0392b;
 }
+
+
+
+/* --- Estilos para la Página de Listar Mascotas --- */
+.lista-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.lista-container h1 {
+    text-align: center;
+    color: #34495e;
+    font-family: Impact, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.grid-mascotas {
+    display: grid;
+    /* Crea columnas flexibles que se adaptan al espacio */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-mascota {
+    background-color: #f4f6f6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-mascota h3 {
+    color: #e74c3c;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.card-mascota p {
+    margin: 0.25rem 0;
+    color: #34495e;
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio */
+}
+
+.card-mascota .ubicacion {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 1rem;
+}
+
+.sin-mascotas {
+    text-align: center;
+    grid-column: 1 / -1; /* Ocupa todo el ancho del grid */
+    font-size: 1.2em;
+    color: #7f8c8d;
+    padding: 2rem;
+}
