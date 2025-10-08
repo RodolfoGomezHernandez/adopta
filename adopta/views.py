@@ -4,7 +4,7 @@ from .models import Contacto, Mascota # Importamos los modelos
 # Create your views here.
 def home(request):
     #Esta vista renderiza la plantilla home.html cuando se accede a la ruta raíz
-    return render(request, 'home.html')
+    return render(request, 'adopta/home.html')
 
 def contacto(request):
     if request.method == 'POST':
@@ -25,11 +25,11 @@ def contacto(request):
     else:
         form = ContactoForm()
 
-    return render(request, 'contacto.html', {'form': form})
+    return render(request, 'adopta/contacto.html', {'form': form})
 
 def lista_mascotas(request):
     # Obtenemos todos los objetos Mascota de la base de datos
     mascotas = Mascota.objects.all()
     # Pasamos las mascotas a la plantilla en un diccionario
-    return render(request, 'lista_mascotas.html', {'mascotas': mascotas})
+    return render(request, 'adopta/listar_mascotas.html', {'mascotas': mascotas})
 

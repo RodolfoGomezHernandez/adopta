@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'adopta/base.html' %}
 {% load static %}
 
 {% block title %}Adopta una Mascota - Garras y Patas{% endblock %}
@@ -11,7 +11,7 @@
         {% for mascota in mascotas %}
             <div class="card-mascota">
                 <!-- Por ahora no tenemos imagen, pero dejamos el espacio -->
-                <img src="{% static 'img/placeholder.png' %}" alt="Foto de {{ mascota.nombre }}">
+                <img src="{% static 'img/leorio.png' %}" alt="Foto de {{ mascota.nombre }}">
                 <h3>{{ mascota.nombre }}</h3>
                 <p><strong>Raza:</strong> {{ mascota.raza }}</p>
                 <p><strong>Peso:</strong> {{ mascota.peso }} kg</p>
