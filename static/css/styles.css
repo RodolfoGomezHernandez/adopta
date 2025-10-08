@@ -99,37 +99,42 @@ footer ul {
 
 /* --- Estilos para el Formulario de Contacto --- */
 .form-contact {
-    background-color: #f4f6f6;
-    max-width: 500px;
+    max-width: 600px; 
     margin: 50px auto;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-contact h2 {
-    color: #34495e;
+    color: #000;
     font-family: Impact, sans-serif;
     text-align: center;
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
 
+
 .form-contact form p {
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center; 
+    gap: 15px;
 }
 
+
 .form-contact label {
-    display: block;
-    margin-bottom: 0.5rem;
     font-weight: bold;
     color: #34495e;
     text-align: left;
+    flex-basis: 100px; /* Ancho base del label */
+    flex-shrink: 0; /* Evita que el label se encoja */
 }
+
 
 .form-contact input[type="text"],
 .form-contact input[type="email"],
 .form-contact input[type="tel"] {
+    flex: 1; /* El input ocupa el resto del espacio disponible */
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ccc;
