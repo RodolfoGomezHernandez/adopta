@@ -1,0 +1,27 @@
+{% extends 'adopta/dashboard/dashboard_base.html' %}
+{% block title %}Lista de Interesados{% endblock %}
+{% block dashboard_content %}
+    <h1>Interesados Registrados</h1>
+    <table class="dashboard-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Comuna</th>
+                <th>Fecha de Envío</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for interesado in interesados %}
+            <tr>
+                <td>{{ interesado.nombre }}</td>
+                <td>{{ interesado.correo }}</td>
+                <td>{{ interesado.telefono }}</td>
+                <td>{{ interesado.comuna }}</td>
+                <td>{{ interesado.fecha_envio|date:"d/m/Y H:i" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

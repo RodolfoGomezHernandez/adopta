@@ -1,0 +1,15 @@
+{% extends 'adopta/base.html' %}
+{% block content %}
+<div class="dashboard-container">
+    <aside class="dashboard-sidebar">
+        <h3>Panel de Control</h3>
+        <ul>
+            <li><a href="{% url 'mascotas_list' %}">Mascotas</a></li>
+            <li><a href="{% url 'interesados_list' %}">Interesados</a></li>
+        </ul>
+    </aside>
+    <main class="dashboard-content">
+        {% block dashboard_content %}{% endblock %}
+    </main>
+</div>
+{% endblock %}

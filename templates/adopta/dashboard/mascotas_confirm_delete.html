@@ -1,0 +1,13 @@
+{% extends 'adopta/dashboard/dashboard_base.html' %}
+{% block title %}Confirmar Eliminación{% endblock %}
+{% block dashboard_content %}
+    <h1>¿Estás seguro?</h1>
+    <p>Estás a punto de eliminar permanentemente a la mascota: <strong>{{ mascota.nombre }}</strong>.</p>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-actions">
+            <button type="submit" class="btn-danger">Sí, eliminar</button>
+            <a href="{% url 'mascotas_list' %}" class="btn-secondary">Cancelar</a>
+        </div>
+    </form>
+{% endblock %}

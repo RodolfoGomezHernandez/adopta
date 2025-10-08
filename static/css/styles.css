@@ -217,3 +217,134 @@ footer ul {
     color: #7f8c8d;
     padding: 2rem;
 }
+
+
+/* --- Estilos para el Dashboard --- */
+.dashboard-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.dashboard-sidebar {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    background-color: #f4f6f6;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.dashboard-sidebar h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+.dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-sidebar ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.dashboard-sidebar ul li a:hover {
+    background-color: #e0e0e0;
+}
+
+.dashboard-content {
+    flex-grow: 1;
+}
+
+.dashboard-content h1 {
+    color: #34495e;
+}
+
+.header-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para tablas */
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.dashboard-table th {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.dashboard-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.dashboard-table .acciones {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos para botones */
+.btn-primary, .btn-secondary, .btn-danger {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary { background-color: #27ae60; }
+.btn-secondary { background-color: #f39c12; }
+.btn-danger { background-color: #c0392b; }
+
+/* Estilos para formularios del dashboard */
+.form-dashboard {
+    background-color: #f4f6f6;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-dashboard p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-dashboard label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-dashboard input, .form-dashboard textarea, .form-dashboard select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 10px;
+}
